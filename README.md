@@ -25,7 +25,7 @@ Files:
 # First extension
 Main properties of SDSS DR16 quasars.
 | Column | Format | Unit | Description |
-| --- | --- | --- | --- | --- |
+| SDSS_NAME | STRING |  | SDSS DR16 designation (J2000) |
 
 # Second extension
 Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algorithms/qso_catalog/).
