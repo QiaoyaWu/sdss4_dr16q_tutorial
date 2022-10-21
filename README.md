@@ -14,10 +14,20 @@ The catalog, PyQSOFit output files, and supplemental materials can be downloaded
 Due to space limit, we do not provide individual QA plots. You can genererate QA plots using the output fits file and the Jupyter notebook tutorial. If you need bulk QA plots for a specific set of DR16Q quasars, we will be happy to provide them upon requests. 
 
 Files:
-- __sdss4_QSOFit_op_tutorial.ipynb__: jupyter notebook for using the PyQSOFit output fits
-- __qsofunc.py__: python script to calculate the continuum model, gaussian line profile, line properties, and etc.
-- __qsopar_generate.py__: python script to generate the PyQSOFit input parameters
-- __fe_optical.txt__ and __fe_uv.txt__: text files for the FeII model
-- __download__: folder to keep downloaded output fits file
-- __op__: folder to keep QA plot
+- `sdss4_QSOFit_op_tutorial.ipynb`: jupyter notebook for using the PyQSOFit output fits
+- `qsofunc.py`: python script to calculate the continuum model, gaussian line profile, line properties, and etc.
+- `qsopar_generate.py`: python script to generate the PyQSOFit input parameters
+- `fe_optical.txt` and `fe_uv.txt`: text files for the FeII model
+- `download`: folder to keep downloaded output fits file
+- `op`: folder to keep QA plot
 
+## Catalog format description
+# First extension
+Main properties of SDSS DR16 quasars.
+| Column | Format | Unit | Description |
+| --- | --- | --- | --- | --- |
+
+# Second extension
+Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algorithms/qso_catalog/).
+| Column | Description |
+| --- | --- | 
