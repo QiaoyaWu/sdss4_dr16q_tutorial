@@ -39,20 +39,20 @@ Main properties of SDSS DR16 quasars.
 | Z_FIT | DOUBLE | | Input redshift for QSOFit; can differ from Z DR16Q |
 | Z_SYS | DOUBLE | | Systemic redshift |
 | Z_SYS_ERR | DOUBLE | | Uncertainties of systemic redshift |
-| EBV | DOUBLE | | Milky Way extinction $E(B − V)$from Schlegel et al. (1998) and scaled to match the results in Schlafly & Finkbeiner (2011) |
+| EBV | DOUBLE | | Milky Way extinction E(B − V) from Schlegel et al. (1998) and scaled to match the results in Schlafly & Finkbeiner (2011) |
 | SN_MEDIAN_ALL | DOUBLE | | Median S/N per pixel of the raw spectrum |
 | CONTI_FIT | DOUBLE[5] | | Best-fit parameters for the continuum model (PL+poly) |
 | CONTI_FIT_ERR | DOUBLE[5] | | Uncertainties in the best-fit continuum parameters |
 | CONTI_STAT | DOUBLE[2] | | Continuum fitting pixel number, reduced $\chi^2$ |
 | FEII_UV | DOUBLE[3]| | Best-fit parameters for the UV FeII model |
 | FEII_UV_ERR | DOUBLE[3] | | Uncertainties in the best-fit UV FeII model |
-| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within 2250-2650$\AA$ |
+| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within 2250-2650$\angstrom$ |
 | FEII_UV_EW_ERR | DOUBLE | | Uncertainties in REW FE 2250 2650 |
 | FEII_OPT | DOUBLE[3] | | Best-fit parameters for the optical Fe ii model |
 | FEII_OPT_ERR | DOUBLE[3] | | Uncertainties in the best-fit optical Fe ii model |
-| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical Fe ii within 4434-468 $\AA$|
+| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical Fe ii within 4434-4680$\AA$|
 | FEII_OPT_EW_ERR | DOUBLE | | Uncertainties in REW FE 4434-4684 |
-| LOGL1350 | DOUBLE | [erg s$^{-1}$] | Continuum luminosity at rest-frame 1350$\AA$ |
+| LOGL1350 | DOUBLE | $[erg s^{-1}]$ | Continuum luminosity at rest-frame 1350$\AA$ |
 | LOGL1350_ERR | DOUBLE | [erg s$^{-1}$] | Uncertainty in LOGL1350 |
 | LOGL1700 | DOUBLE | [erg s$^{-1}$] | |
 | LOGL1700_ERR | DOUBLE | [erg s$^{-1}$] | |
