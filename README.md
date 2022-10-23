@@ -46,13 +46,13 @@ Main properties of SDSS DR16 quasars.
 | CONTI_STAT | DOUBLE[2] | | Continuum fitting pixel number, reduced $\chi^2$ |
 | FEII_UV | DOUBLE[3]| | Best-fit parameters for the UV FeII model |
 | FEII_UV_ERR | DOUBLE[3] | | Uncertainties in the best-fit UV FeII model |
-| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within $2250-2650\angstrom$ |
+| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within 2250-2650 Å |
 | FEII_UV_EW_ERR | DOUBLE | | Uncertainties in REW_FE_2250_2650 |
 | FEII_OPT | DOUBLE[3] | | Best-fit parameters for the optical FeII model |
 | FEII_OPT_ERR | DOUBLE[3] | | Uncertainties in the best-fit optical FeII model |
-| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical FeII within $4434-4680\AA$|
+| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical FeII within 4434-4680$\AA$|
 | FEII_OPT_EW_ERR | DOUBLE | | Uncertainties in REW_FE_4434_4684 |
-| LOGL1350 | DOUBLE | $\rm [erg s^{-1}]$ | Continuum luminosity at rest-frame $1350\AA$ |
+| LOGL1350 | DOUBLE | $\rm [erg s^{-1}]$ | Continuum luminosity at rest-frame 1350$\AA$ |
 | LOGL1350_ERR | DOUBLE |$\rm [erg s^{-1}]$ | Uncertainty in LOGL1350 |
 | LOGL1700 | DOUBLE | $\rm [erg s^{-1}]$ | |
 | LOGL1700_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
