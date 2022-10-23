@@ -120,6 +120,7 @@ Main properties of SDSS DR16 quasars.
 | `OI1304_ERR` | ... |
 | `LYA_ERR` | ... |
 | `NV1240_ERR` | ... |
+| | |
 | `HA_COMP_STAT` | Complex line pixel number, reduced $\chi^2$|
 | `HB_COMP_STAT` | ... |
 | `MGII_COMP_STAT` | ... |
