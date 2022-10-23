@@ -175,61 +175,61 @@ Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algori
 | `FUV_IVAR` | Inerse variance for FUV |
 | `NUV` | GALEX NUV flux | 
 | `NUV_IVAR` | Inerse variance for NUV |
-| `UKIDSS_MATCHED` | |
-| `YFLUX` | |
-| `YFLUX_ERR` | |
-| `JFLUX` | |
-| `JFLUX_ERR` | |
-| `HFLUX` | |
-| `HFLUX_ERR` | |
-| `KFLUX` | |
-| `KFLUX_ERR` | |
-| `W1_FLUX` | |
-| `W1_FLUX_IVAR` | |
-| `W1_MAG` | |
-| `W1_MAG_ERR` | |
-| `W1_CHI2` | |
-| `W1_FLUX_SNR` | |
-| `W1_SRC_FRAC` | |
-| `W1_EXT_FLUX` | |
-| `W1_EXT_FRAC` | |
-| `W1_NPIX` | |
-| `W2_FLUX` | |
-| `W2_FLUX_IVAR` | |
-| `W2_MAG` | |
-| `W2_MAG_ERR` | |
-| `W2_CHI2` | |
-| `W2_FLUX_SNR` | |
-| `W2_SRC_FRAC` | |
-| `W2_EXT_FLUX` | |
-| `W2_EXT_FRAC` | |
-| `W2_NPIX` | |
-| `FIRST_MATCHED` | |
-| `FIRST_FLUX` | |
-| `FIRST_SNR` | |
-| `SDSS2FIRST_SEP` | |
-| `JMAG` | |
-| `JMAG_ERR` | |
-| `JSNR` | |
-| `JRDFLAG` | |
-| `HMAG` | |
-| `HMAG_ERR` | |
-| `HSNR` | |
-| `HRDFLAG` | |
-| `KMAG` | |
-| `KMAG_ERR` | |
-| `KSNR` | |
-| `KRDFLAG` | |
-| `SDSS2MASS_SEP` | |
-| `2RXS_ID` | |
-| `2RXS_RA` | |
-| `2RXS_DEC` | |
-| `2RXS_SRC_FLUX` | |
-| `2RXS_SRC_FLUX_ERR` | |
-| `SDSS2ROSAT_SEP` | |
-| `XMM_SRC_ID` | |
-| `XMM_RA` | |
-| `XMM_DEC` | |
+| `UKIDSS_MATCHED` | Matching flag for objects in the forced-photometry SDSS-DR8/UKIDSS catalog |
+| `YFLUX` | Flux density and error in Y band in units of $\rm W\,m^{−2}\,Hz^{−1}$|
+| `YFLUX_ERR` | Flux density error in Y band |
+| `JFLUX` | ... |
+| `JFLUX_ERR` | ... |
+| `HFLUX` | ... |
+| `HFLUX_ERR` | ... |
+| `KFLUX` | ... |
+| `KFLUX_ERR` | ... |
+| `W1_FLUX` | W1-band (3.4 μm) WISE flux |
+| `W1_FLUX_IVAR` | Inverse variance of W1_FLUX |
+| `W1_MAG` | W1-band magnitude in Vega magnitude system|
+| `W1_MAG_ERR` | Magnitude error in W1_MAG |
+| `W1_CHI2` | W1-band profile-weighted $\chi^2$ goodness of fit weighted by the point-spread function in the WISE image|
+| `W1_FLUX_SNR` | W1-band flux signal-to-noise ratio |
+| `W1_SRC_FRAC` | W1-band profile-weighted number of WISE exposure|
+| `W1_EXT_FLUX` | W1-band profile-weighted flux from other sources within the PSF of this source |
+| `W1_EXT_FRAC` | Profile-weighted fraction of flux from external sources for this source |
+| `W1_NPIX` | W1-band number of pixel |
+| `W2_FLUX` | W2-band (4.6 μm) WISE flux |
+| `W2_FLUX_IVAR` | ... |
+| `W2_MAG` | ... |
+| `W2_MAG_ERR` | ... |
+| `W2_CHI2` | ... |
+| `W2_FLUX_SNR` | ... |
+| `W2_SRC_FRAC` | ... |
+| `W2_EXT_FLUX` | ... |
+| `W2_EXT_FRAC` | ... |
+| `W2_NPIX` | ... |
+| `FIRST_MATCHED` | Matching flag for objects in the FIRST catalog |
+| `FIRST_FLUX` | Peak flux density |
+| `FIRST_SNR` | Flux density signal-to-noise ratio |
+| `SDSS2FIRST_SEP` | Matching separation in arcsec between the SDSS and FIRST objects|
+| `JMAG` | J-band magnitude |
+| `JMAG_ERR` | J-band magnitude error |
+| `JSNR` | J-band signal-to-noise ratio |
+| `JRDFLAG` | J-band photometric read flag |
+| `HMAG` | ... |
+| `HMAG_ERR` | ... |
+| `HSNR` | ... |
+| `HRDFLAG` | ... |
+| `KMAG` | ... |
+| `KMAG_ERR` | ... |
+| `KSNR` | ... |
+| `KRDFLAG` | ... |
+| `SDSS2MASS_SEP` | Matching separation in arcsec between SDSS and 2MASS object |
+| `2RXS_ID` | s2RXS ID number designating unique objects | 
+| `2RXS_RA` | Right ascension of the 2RXS source in decimal degrees (J2000)|
+| `2RXS_DEC` | Declination of the 2RXS source in decimal degrees (J2000)|
+| `2RXS_SRC_FLUX` | Source flux in the 0.5–2.0 keV band in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `2RXS_SRC_FLUX_ERR` | Source flux error in the 0.5–2.0 keV band in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `SDSS2ROSAT_SEP` | Matching separation in arcsec between SDSS and 2RXS objects|
+| `XMM_SRC_ID` | XMM-Newton Source designation ID |
+| `XMM_RA` | Right ascension  of the XMM-Newton source in decimal degrees (J2000) |
+| `XMM_DEC` | Declination of the XMM-Newton source in decimal degrees (J2000) |
 | `XMM_SOFT_FLUX` | The X-ray flux for the full energy range (0.2–2.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
 | `XMM_SOFT_FLUX_ERR` | The X-ray flux error for the full energy range (0.2–2.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
 | `XMM_HARD_FLUX` |  The X-ray flux for the full energy range (2.0–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
