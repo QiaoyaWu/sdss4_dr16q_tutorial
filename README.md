@@ -27,119 +27,119 @@ Main properties of SDSS DR16 quasars.
 | Column | Format | Unit | Description |
 | --- | --- | --- | --- |
 | SDSS_NAME | STRING |  | SDSS DR16 designation (J2000) |
-| PLATE | LONG64| | |
-| MJD | LONG64 | | |
-| FIBERID | LONG64 | | |
-| RA | DOUBLE | | |
-| DEC | DOUBLE | | |
-| OBJID | STRING | | |
-| IF_BOSS_SDSS | STRING | | |
-| Z_DR16Q | DOUBLE | | |
-| SOURCE_Z_DR16Q | DOUBLE | | |
-| Z_FIT | DOUBLE | | |
-| Z_SYS | DOUBLE | | |
-| Z_SYS_ERR | DOUBLE | | |
-| EBV | DOUBLE | | |
-| SN_MEDIAN_ALL | DOUBLE | | |
-| CONTI_FIT | DOUBLE[5] | | |
-| CONTI_FIT_ERR | DOUBLE[5] | | |
-| CONTI_STAT | DOUBLE[2] | | |
-| FEII_UV | DOUBLE[3]| | |
-| FEII_UV_ERR | | | |
-| FEII_UV_EW | | | |
-| FEII_UV_EW_ERR | | | |
-| FEII_OPT | | | |
-| FEII_OPT_ERR | | | |
-| FEII_OPT_EW | | | |
-| FEII_OPT_EW_ERR | | | |
-| LOGL1350 | | | |
-| LOGL1350_ERR | | | |
-| LOGL1700 | | | |
-| LOGL1700_ERR | | | |
-| LOGL2500 | | | |
-| LOGL2500_ERR | | | |
-| LOGL3000 | | | |
-| LOGL3000_ERR | | | |
-| LOGL5100 | | | |
-| LOGL5100_ERR | | | |
-| HALPHA | | | |
-| HALPHA_BR | | | |
-| NII6585 | | | |
-| SII6718 | | | |
-| HBETA | | | |
-| HBETA_BR | | | |
-| HEII4687 | | | |
-| HEII4687_BR | | | |
-| OIII5007 | | | |
-| OIII5007C | | | |
-| CAII3934 | | | |
-| OII3728 | | | |
-| NEV3426 | | | |
-| MGII | | | |
-| MGII_BR | | | |
-| CIII_ALL | | | |
-| CIII_BR | | | |
-| SIIII1892 | | | |
-| ALIII1857 | | | |
-| NIII1750 | | | |
-| CIV | | | |
-| HEII1640 | | | |
-| HEII1640_BR | | | |
-| SIIV_OIV | | | |
-| OI1304 | | | |
-| LYA | | | |
-| NV1240 | | | |
-| HALPHA_ERR | | | |
-| HALPHA_BR_ERR | | | |
-| NII6585_ERR | | | |
-| SII6718_ERR | | | |
-| HBETA_ERR | | | |
-| HBETA_BR_ERR | | | |
-| HEII4687_ERR | | | |
-| HEII4687_BR_ERR | | | |
-| OIII5007_ERR | | | |
-| OIII5007C_ERR | | | |
-| CAII3934_ERR | | | |
-| OII3728_ERR | | | |
-| NEV3426_ERR | | | |
-| MGII_ERR | | | |
-| MGII_BR_ERR | | | |
-| CIII_ALL_ERR | | | |
-| CIII_BR_ERR | | | |
-| SIIII1892_ERR | | | |
-| ALIII1857_ERR | | | |
-| NIII1750_ERR | | | |
-| CIV_ERR | | | |
-| HEII1640_ERR | | | |
-| HEII1640_BR_ERR | | | |
-| SIIV_OIV_ERR | | | |
-| OI1304_ERR | | | |
-| LYA_ERR | | | |
-| NV1240_ERR | | | |
-| HA_COMP_STAT | | | |
-| HB_COMP_STAT | | | |
-| MGII_COMP_STAT | | | |
-| CIII_COMP_STAT | | | |
-| CIV_COMP_STAT | | | |
-| SIIV_COMP_STAT | | | |
-| LYA_COMP_STAT | | | |
-| CAII_LOC_STAT | | | |
-| OII_LOC_STAT | | | |
-| NEV_LOC_STAT | | | |
-| LOGLBOL | | | |
-| LOGLBOL_ERR | | | |
-| LOGMBH_HB | | | |
-| LOGMBH_HB_ERR | | | |
-| LOGMBH_MGII | | | |
-| LOGMBH_MGII_ERR | | | |
-| LOGMBH_CIV | | | |
-| LOGMBH_CIV_ERR | | | |
-| LOGMBH | | | |
-| LOGMBH_ERR | | | |
-| LOGLEDD_RATIO | | | |
-| LOGLEDD_RATIO_ERR | | | |
-| ZSYS_LINES | | | |
-| ZSYS_LINES_ERR | | | |
+| PLATE | LONG64| | Spectroscopic plate number |
+| MJD | LONG64 | | Spectroscopic MJD |
+| FIBERID | LONG64 | | Spectroscopic fiber number |
+| RA | DOUBLE | degree | Right ascension (J2000) |
+| DEC | DOUBLE | degree | Declination (J2000) |
+| OBJID | STRING | | PLATE-MJD-FIBERID: PyQSOFit output name |
+| IF_BOSS_SDSS | STRING | | Source of the input spectrum: BOSS or SDSS |
+| Z_DR16Q | DOUBLE | | Best redshift provided by DR16Q |
+| SOURCE_Z_DR16Q | DOUBLE | | Source for DR16Q redshift from Lyke et al. (2020) |
+| Z_FIT | DOUBLE | | Input redshift for QSOFit; can differ from Z DR16Q |
+| Z_SYS | DOUBLE | | Systemic redshift |
+| Z_SYS_ERR | DOUBLE | | Uncertainties of systemic redshift |
+| EBV | DOUBLE | | Milky Way extinction $E(B − V)$from Schlegel et al. (1998) and scaled to match the results in Schlafly & Finkbeiner (2011) |
+| SN_MEDIAN_ALL | DOUBLE | | Median S/N per pixel of the raw spectrum |
+| CONTI_FIT | DOUBLE[5] | | Best-fit parameters for the continuum model (PL+poly) |
+| CONTI_FIT_ERR | DOUBLE[5] | | Uncertainties in the best-fit continuum parameters |
+| CONTI_STAT | DOUBLE[2] | | Continuum fitting pixel number, reduced $\chi^2$ |
+| FEII_UV | DOUBLE[3]| | Best-fit parameters for the UV FeII model |
+| FEII_UV_ERR | DOUBLE[3] | | Uncertainties in the best-fit UV FeII model |
+| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within 2250-2650$\AA$ |
+| FEII_UV_EW_ERR | DOUBLE | | Uncertainties in REW FE 2250 2650 |
+| FEII_OPT | DOUBLE[3] | | Best-fit parameters for the optical Fe ii model |
+| FEII_OPT_ERR | DOUBLE[3] | | Uncertainties in the best-fit optical Fe ii model |
+| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical Fe ii within 4434-468 $\AA$|
+| FEII_OPT_EW_ERR | DOUBLE | | Uncertainties in REW FE 4434-4684 |
+| LOGL1350 | DOUBLE | [erg s$^{-1}$] | Continuum luminosity at rest-frame 1350$\AA$ |
+| LOGL1350_ERR | DOUBLE | [erg s$^{-1}$] | Uncertainty in LOGL1350 |
+| LOGL1700 | DOUBLE | [erg s$^{-1}$] | |
+| LOGL1700_ERR | DOUBLE | [erg s$^{-1}$] | |
+| LOGL2500 | DOUBLE | [erg s$^{-1}$] | |
+| LOGL2500_ERR | DOUBLE | [erg s$^{-1}$] | |
+| LOGL3000 | DOUBLE | [erg s$^{-1}$] | |
+| LOGL3000_ERR | DOUBLE | [erg s$^{-1}$] | |
+| LOGL5100 | DOUBLE | [erg s$^{-1}$] | |
+| LOGL5100_ERR | DOUBLE | [erg s$^{-1}$] | |
+| HALPHA | DOUBLE[5] | | |
+| HALPHA_BR | DOUBLE[5] | | |
+| NII6585 | DOUBLE[5] | | |
+| SII6718 | DOUBLE[5] | | |
+| HBETA | DOUBLE[5] | | |
+| HBETA_BR | DOUBLE[5] | | |
+| HEII4687 | DOUBLE[5] | | |
+| HEII4687_BR | DOUBLE[5] | | |
+| OIII5007 | DOUBLE[5] | | |
+| OIII5007C | DOUBLE[5] | | |
+| CAII3934 | DOUBLE[5] | | |
+| OII3728 | DOUBLE[5] | | |
+| NEV3426 | DOUBLE[5] | | |
+| MGII | DOUBLE[5] | | |
+| MGII_BR | DOUBLE[5] | | |
+| CIII_ALL | DOUBLE[5] | | |
+| CIII_BR | DOUBLE[5] | | |
+| SIIII1892 | DOUBLE[5] | | |
+| ALIII1857 | DOUBLE[5] | | |
+| NIII1750 | DOUBLE[5] | | |
+| CIV | DOUBLE[5] | | |
+| HEII1640 | DOUBLE[5] | | |
+| HEII1640_BR | DOUBLE[5] | | |
+| SIIV_OIV | DOUBLE[5] | | |
+| OI1304 | DOUBLE[5] | | |
+| LYA | DOUBLE[5] | | |
+| NV1240 | DOUBLE[5] | | |
+| HALPHA_ERR | DOUBLE[5] | | |
+| HALPHA_BR_ERR | DOUBLE[5] | | |
+| NII6585_ERR | DOUBLE[5] | | |
+| SII6718_ERR | DOUBLE[5] | | |
+| HBETA_ERR | DOUBLE[5] | | |
+| HBETA_BR_ERR | DOUBLE[5] | | |
+| HEII4687_ERR | DOUBLE[5] | | |
+| HEII4687_BR_ERR | DOUBLE[5] | | |
+| OIII5007_ERR | DOUBLE[5] | | |
+| OIII5007C_ERR | DOUBLE[5] | | |
+| CAII3934_ERR | DOUBLE[5] | | |
+| OII3728_ERR | DOUBLE[5] | | |
+| NEV3426_ERR | DOUBLE[5] | | |
+| MGII_ERR | DOUBLE[5] | | |
+| MGII_BR_ERR | DOUBLE[5] | | |
+| CIII_ALL_ERR | DOUBLE[5] | | |
+| CIII_BR_ERR | DOUBLE[5] | | |
+| SIIII1892_ERR | DOUBLE[5] | | |
+| ALIII1857_ERR | DOUBLE[5] | | |
+| NIII1750_ERR | DOUBLE[5] | | |
+| CIV_ERR | DOUBLE[5] | | |
+| HEII1640_ERR | DOUBLE[5] | | |
+| HEII1640_BR_ERR | DOUBLE[5] | | |
+| SIIV_OIV_ERR | DOUBLE[5] | | |
+| OI1304_ERR | DOUBLE[5] | | |
+| LYA_ERR | DOUBLE[5] | | |
+| NV1240_ERR | DOUBLE[5] | | |
+| HA_COMP_STAT | DOUBLE[5] | | |
+| HB_COMP_STAT | DOUBLE[5] | | |
+| MGII_COMP_STAT | DOUBLE[5] | | |
+| CIII_COMP_STAT | DOUBLE[5] | | |
+| CIV_COMP_STAT | DOUBLE[5] | | |
+| SIIV_COMP_STAT | DOUBLE[5] | | |
+| LYA_COMP_STAT | DOUBLE[5] | | |
+| CAII_LOC_STAT | DOUBLE[5] | | |
+| OII_LOC_STAT | DOUBLE[5] | | |
+| NEV_LOC_STAT | DOUBLE[5] | | |
+| LOGLBOL | DOUBLE | [erg s$^{-1}$] | |
+| LOGLBOL_ERR | DOUBLE | [erg s$^{-1}$] | |
+| LOGMBH_HB | DOUBLE | | |
+| LOGMBH_HB_ERR | DOUBLE | | |
+| LOGMBH_MGII | DOUBLE | | |
+| LOGMBH_MGII_ERR | DOUBLE | | |
+| LOGMBH_CIV | DOUBLE | | |
+| LOGMBH_CIV_ERR | DOUBLE | | |
+| LOGMBH | DOUBLE | | |
+| LOGMBH_ERR | DOUBLE | | |
+| LOGLEDD_RATIO | DOUBLE | | |
+| LOGLEDD_RATIO_ERR | DOUBLE | | |
+| ZSYS_LINES | DOUBLE | | |
+| ZSYS_LINES_ERR | DOUBLE | | |
 
 
 # Second extension
