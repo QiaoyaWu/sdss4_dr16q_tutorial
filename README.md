@@ -50,82 +50,84 @@ Main properties of SDSS DR16 quasars.
 | FEII_UV_EW_ERR | DOUBLE | | Uncertainties in REW_FE_2250_2650 |
 | FEII_OPT | DOUBLE[3] | | Best-fit parameters for the optical FeII model |
 | FEII_OPT_ERR | DOUBLE[3] | | Uncertainties in the best-fit optical FeII model |
-| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical FeII within 4434-4680$\AA$|
+| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical FeII within 4434-4680Å|
 | FEII_OPT_EW_ERR | DOUBLE | | Uncertainties in REW_FE_4434_4684 |
-| LOGL1350 | DOUBLE | $\rm [erg s^{-1}]$ | Continuum luminosity at rest-frame 1350$\AA$ |
-| LOGL1350_ERR | DOUBLE |$\rm [erg s^{-1}]$ | Uncertainty in LOGL1350 |
-| LOGL1700 | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGL1700_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGL2500 | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGL2500_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGL3000 | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGL3000_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGL5100 | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGL5100_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
-| HALPHA | DOUBLE[5] | | |
-| HALPHA_BR | DOUBLE[5] | | |
-| NII6585 | DOUBLE[5] | | |
-| SII6718 | DOUBLE[5] | | |
-| HBETA | DOUBLE[5] | | |
-| HBETA_BR | DOUBLE[5] | | |
-| HEII4687 | DOUBLE[5] | | |
-| HEII4687_BR | DOUBLE[5] | | |
-| OIII5007 | DOUBLE[5] | | |
-| OIII5007C | DOUBLE[5] | | |
-| CAII3934 | DOUBLE[5] | | |
-| OII3728 | DOUBLE[5] | | |
-| NEV3426 | DOUBLE[5] | | |
-| MGII | DOUBLE[5] | | |
-| MGII_BR | DOUBLE[5] | | |
-| CIII_ALL | DOUBLE[5] | | |
-| CIII_BR | DOUBLE[5] | | |
-| SIIII1892 | DOUBLE[5] | | |
-| ALIII1857 | DOUBLE[5] | | |
-| NIII1750 | DOUBLE[5] | | |
-| CIV | DOUBLE[5] | | |
-| HEII1640 | DOUBLE[5] | | |
-| HEII1640_BR | DOUBLE[5] | | |
-| SIIV_OIV | DOUBLE[5] | | |
-| OI1304 | DOUBLE[5] | | |
-| LYA | DOUBLE[5] | | |
-| NV1240 | DOUBLE[5] | | |
-| HALPHA_ERR | DOUBLE[5] | | |
-| HALPHA_BR_ERR | DOUBLE[5] | | |
-| NII6585_ERR | DOUBLE[5] | | |
-| SII6718_ERR | DOUBLE[5] | | |
-| HBETA_ERR | DOUBLE[5] | | |
-| HBETA_BR_ERR | DOUBLE[5] | | |
-| HEII4687_ERR | DOUBLE[5] | | |
-| HEII4687_BR_ERR | DOUBLE[5] | | |
-| OIII5007_ERR | DOUBLE[5] | | |
-| OIII5007C_ERR | DOUBLE[5] | | |
-| CAII3934_ERR | DOUBLE[5] | | |
-| OII3728_ERR | DOUBLE[5] | | |
-| NEV3426_ERR | DOUBLE[5] | | |
-| MGII_ERR | DOUBLE[5] | | |
-| MGII_BR_ERR | DOUBLE[5] | | |
-| CIII_ALL_ERR | DOUBLE[5] | | |
-| CIII_BR_ERR | DOUBLE[5] | | |
-| SIIII1892_ERR | DOUBLE[5] | | |
-| ALIII1857_ERR | DOUBLE[5] | | |
-| NIII1750_ERR | DOUBLE[5] | | |
-| CIV_ERR | DOUBLE[5] | | |
-| HEII1640_ERR | DOUBLE[5] | | |
-| HEII1640_BR_ERR | DOUBLE[5] | | |
-| SIIV_OIV_ERR | DOUBLE[5] | | |
-| OI1304_ERR | DOUBLE[5] | | |
-| LYA_ERR | DOUBLE[5] | | |
-| NV1240_ERR | DOUBLE[5] | | |
-| HA_COMP_STAT | DOUBLE[5] | | |
-| HB_COMP_STAT | DOUBLE[5] | | |
-| MGII_COMP_STAT | DOUBLE[5] | | |
-| CIII_COMP_STAT | DOUBLE[5] | | |
-| CIV_COMP_STAT | DOUBLE[5] | | |
-| SIIV_COMP_STAT | DOUBLE[5] | | |
-| LYA_COMP_STAT | DOUBLE[5] | | |
-| CAII_LOC_STAT | DOUBLE[5] | | |
-| OII_LOC_STAT | DOUBLE[5] | | |
-| NEV_LOC_STAT | DOUBLE[5] | | |
+| LOGL1350 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 1350Å |
+| LOGL1350_ERR | DOUBLE |$\rm [erg\,s^{-1}]$ | Uncertainty in LOGL1350 |
+| LOGL1700 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 1700Å |
+| LOGL1700_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL1700 |
+| LOGL2500 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 2500Å |
+| LOGL2500_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL2500|
+| LOGL3000 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 3000Å |
+| LOGL3000_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL3000 |
+| LOGL5100 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 5100Å |
+| LOGL5100_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL5100 |
+| | | Å,Å,$\rm 10^{-17}erg\,s^{-1}cm^{-2}$,$\rm [erg\,s^{-1}]$,$km\,s^{-1}$,Å | peak wavelength, 50% flux centoid wavelength, flux,$\log L_{\rm line}$, FWHM, rest-frame equivalent width |
+| HALPHA | DOUBLE[6] | ... | For the entire H$\alpha$ profile (narrow and broad lines combined) |
+| HALPHA_BR | DOUBLE[6] | ... | For the broad H$\alpha$ profile |
+| NII6585 | DOUBLE[6] | ... | For the narrow [NII] $\lambda$6584 component|
+| SII6718 | DOUBLE[6] | ... | For the entire H$\beta$ profile (narrow and broad lines combined) |
+| HBETA | DOUBLE[6] | ... | For the broad H$\beta$ component |
+| HBETA_BR | DOUBLE[6] | ... | |
+| HEII4687 | DOUBLE[6] | ... | |
+| HEII4687_BR | DOUBLE[6] | ... | |
+| OIII5007 | DOUBLE[6] | ... | |
+| OIII5007C | DOUBLE[6] | ... | |
+| CAII3934 | DOUBLE[6] | ... | |
+| OII3728 | DOUBLE[6] | ... | |
+| NEV3426 | DOUBLE[6] | ... | |
+| MGII | DOUBLE[6] | ... | |
+| MGII_BR | DOUBLE[6] | ... | |
+| CIII_ALL | DOUBLE[6] | ... | |
+| CIII_BR | DOUBLE[6] | ... | |
+| SIIII1892 | DOUBLE[6] | ... | |
+| ALIII1857 | DOUBLE[6] | ... | |
+| NIII1750 | DOUBLE[6] | ... | |
+| CIV | DOUBLE[6] | ... | |
+| HEII1640 | DOUBLE[6] | ... | |
+| HEII1640_BR | DOUBLE[6] | ... | |
+| SIIV_OIV | DOUBLE[6] | ... | |
+| OI1304 | DOUBLE[6] | ... | |
+| LYA | DOUBLE[6] | ... | |
+| NV1240 | DOUBLE[6] | ... | |
+| | | Å,Å,$\rm 10^{-17}erg\,s^{-1}cm^{-2}$,$\rm [erg\,s^{-1}]$,$km\,s^{-1}$,Å | Uncertainties in peak wavelength, 50% flux centoid wavelength, flux,$\log L_{\rm line}$, FWHM, rest-frame equivalent width |
+| HALPHA_ERR | DOUBLE[6] | ... | |
+| HALPHA_BR_ERR | DOUBLE[6] | ... | |
+| NII6585_ERR | DOUBLE[6] | ... | |
+| SII6718_ERR | DOUBLE[6] | ... | |
+| HBETA_ERR | DOUBLE[6] | ... | |
+| HBETA_BR_ERR | DOUBLE[6] | ... | |
+| HEII4687_ERR | DOUBLE[6] | ... | |
+| HEII4687_BR_ERR | DOUBLE[6] | ... | |
+| OIII5007_ERR | DOUBLE[6] | ... | |
+| OIII5007C_ERR | DOUBLE[6] | ... | |
+| CAII3934_ERR | DOUBLE[6] | ... | |
+| OII3728_ERR | DOUBLE[6] | ... | |
+| NEV3426_ERR | DOUBLE[6] | ... | |
+| MGII_ERR | DOUBLE[6] | ... | |
+| MGII_BR_ERR | DOUBLE[6] | ... | |
+| CIII_ALL_ERR | DOUBLE[6] | ... | |
+| CIII_BR_ERR | DOUBLE[6] | ... | |
+| SIIII1892_ERR | DOUBLE[6] | ... | |
+| ALIII1857_ERR | DOUBLE[6] | ... | |
+| NIII1750_ERR | DOUBLE[6] | ... | |
+| CIV_ERR | DOUBLE[6] | ... | |
+| HEII1640_ERR | DOUBLE[6] | ... | |
+| HEII1640_BR_ERR | DOUBLE[6] | ... | |
+| SIIV_OIV_ERR | DOUBLE[6] | ... | |
+| OI1304_ERR | DOUBLE[6] | ... | |
+| LYA_ERR | DOUBLE[6] | ... | |
+| NV1240_ERR | DOUBLE[6] | ... | |
+| HA_COMP_STAT | DOUBLE[2] |  | |
+| HB_COMP_STAT | DOUBLE[2] |  | |
+| MGII_COMP_STAT | DOUBLE[2] |  | |
+| CIII_COMP_STAT | DOUBLE[2] |  | |
+| CIV_COMP_STAT | DOUBLE[2] | | |
+| SIIV_COMP_STAT | DOUBLE[2] | | |
+| LYA_COMP_STAT | DOUBLE[2] | | |
+| CAII_LOC_STAT | DOUBLE[2] | | |
+| OII_LOC_STAT | DOUBLE[2] | | |
+| NEV_LOC_STAT | DOUBLE[2] | | |
 | LOGLBOL | DOUBLE | $\rm [erg s^{-1}]$ | |
 | LOGLBOL_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
 | LOGMBH_HB | DOUBLE | | |
