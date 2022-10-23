@@ -22,6 +22,8 @@ Files:
 - `op`: folder to keep QA plot
 
 ## Catalog format description
+Here we provide a detailed description for the main catalog that has two extensions.
+
 ### First extension
 Main properties of SDSS DR16 quasars.
 | Column | Description |
@@ -221,7 +223,7 @@ Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algori
 | `KSNR` | ... |
 | `KRDFLAG` | ... |
 | `SDSS2MASS_SEP` | Matching separation in arcsec between SDSS and 2MASS object |
-| `2RXS_ID` | s2RXS ID number designating unique objects | 
+| `2RXS_ID` | 2RXS ID number designating unique objects | 
 | `2RXS_RA` | Right ascension of the 2RXS source in decimal degrees (J2000)|
 | `2RXS_DEC` | Declination of the 2RXS source in decimal degrees (J2000)|
 | `2RXS_SRC_FLUX` | Source flux in the 0.5–2.0 keV band in $\rm erg\,s^{-1}\,cm^{-2}$ |
