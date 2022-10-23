@@ -178,7 +178,7 @@ Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algori
 | `NUV` | GALEX NUV flux | 
 | `NUV_IVAR` | Inerse variance for NUV |
 | `UKIDSS_MATCHED` | Matching flag for objects in the forced-photometry SDSS-DR8/UKIDSS catalog |
-| `YFLUX` | Flux density and error in Y band in units of $\rm W\,m^{−2}\,Hz^{−1}$|
+| `YFLUX` | Flux density and error in Y band |
 | `YFLUX_ERR` | Flux density error in Y band |
 | `JFLUX` | ... |
 | `JFLUX_ERR` | ... |
@@ -226,17 +226,17 @@ Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algori
 | `2RXS_ID` | 2RXS ID number designating unique objects | 
 | `2RXS_RA` | Right ascension of the 2RXS source in decimal degrees (J2000)|
 | `2RXS_DEC` | Declination of the 2RXS source in decimal degrees (J2000)|
-| `2RXS_SRC_FLUX` | Source flux in the 0.5–2.0 keV band in $\rm erg\,s^{-1}\,cm^{-2}$ |
-| `2RXS_SRC_FLUX_ERR` | Source flux error in the 0.5–2.0 keV band in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `2RXS_SRC_FLUX` | Source flux in the 0.5–2.0 keV band |
+| `2RXS_SRC_FLUX_ERR` | Source flux error in the 0.5–2.0 keV band |
 | `SDSS2ROSAT_SEP` | Matching separation in arcsec between SDSS and 2RXS objects|
 | `XMM_SRC_ID` | XMM-Newton Source designation ID |
 | `XMM_RA` | Right ascension  of the XMM-Newton source in decimal degrees (J2000) |
 | `XMM_DEC` | Declination of the XMM-Newton source in decimal degrees (J2000) |
-| `XMM_SOFT_FLUX` | The X-ray flux for the full energy range (0.2–2.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
-| `XMM_SOFT_FLUX_ERR` | The X-ray flux error for the full energy range (0.2–2.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
-| `XMM_HARD_FLUX` |  The X-ray flux for the full energy range (2.0–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
-| `XMM_HARD_FLUX_ERR` | The X-ray flux error for the full energy range (2.0–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$|
-| `XMM_TOTAL_FLUX` | The total X-ray flux for the full energy range (0.2–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
-| `XMM_TOTAL_FLUX_ERR` | The total X-ray flux error for the full energy range (0.2–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
-| `XMM_TOTAL_LUM` | Total X-ray luminosity for the full energy range (0.2–12.0 keV) in $\rm erg\,s^{-1}$|
+| `XMM_SOFT_FLUX` | The X-ray flux for the full energy range (0.2–2.0 keV) |
+| `XMM_SOFT_FLUX_ERR` | The X-ray flux error for the full energy range (0.2–2.0 keV) |
+| `XMM_HARD_FLUX` |  The X-ray flux for the full energy range (2.0–12.0 keV) |
+| `XMM_HARD_FLUX_ERR` | The X-ray flux error for the full energy range (2.0–12.0 keV) |
+| `XMM_TOTAL_FLUX` | The total X-ray flux for the full energy range (0.2–12.0 keV) |
+| `XMM_TOTAL_FLUX_ERR` | The total X-ray flux error for the full energy range (0.2–12.0 keV) |
+| `XMM_TOTAL_LUM` | Total X-ray luminosity for the full energy range (0.2–12.0 keV)|
 | `SDSS2XMM_SEP` | Matching separation in arcsec between SDSS and XMM-Newton objects |
