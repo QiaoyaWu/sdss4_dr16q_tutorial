@@ -25,7 +25,7 @@ Files:
 # First extension
 Main properties of SDSS DR16 quasars.
 | Column | Format | Unit | Description |
-| --- | --- | --- | --- |
+| ---- | --- | --- | ------ |
 | SDSS_NAME | STRING |  | SDSS DR16 designation (J2000) |
 | PLATE | LONG64| | Spectroscopic plate number |
 | MJD | LONG64 | | Spectroscopic MJD |
@@ -63,30 +63,30 @@ Main properties of SDSS DR16 quasars.
 | LOGL5100 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 5100Å |
 | LOGL5100_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL5100 |
 | | | Å,Å,$\rm 10^{-17}erg\,s^{-1}cm^{-2}$,$\rm [erg\,s^{-1}]$,$km\,s^{-1}$,Å | peak wavelength, 50% flux centoid wavelength, flux,$\log L_{\rm line}$, FWHM, rest-frame equivalent width |
-| HALPHA | DOUBLE[6] | ... | For the entire H$\alpha$ profile (narrow and broad lines combined) |
-| HALPHA_BR | DOUBLE[6] | ... | For the broad H$\alpha$ profile |
-| NII6585 | DOUBLE[6] | ... | For the narrow [NII] $\lambda$6584 component|
-| SII6718 | DOUBLE[6] | ... | For the entire H$\beta$ profile (narrow and broad lines combined) |
-| HBETA | DOUBLE[6] | ... | For the broad H$\beta$ component |
+| HALPHA | DOUBLE[6] | ... | For the entire H $\alpha$ profile (narrow and broad lines combined) |
+| HALPHA_BR | DOUBLE[6] | ... | For the broad H $\alpha$ profile |
+| NII6585 | DOUBLE[6] | ... | For the narrow [NII] $\lambda$ 6584 component|
+| SII6718 | DOUBLE[6] | ... | For the entire H $\beta$ profile (narrow and broad lines combined) |
+| HBETA | DOUBLE[6] | ... | For the broad H $\beta$ component |
 | HBETA_BR | DOUBLE[6] | ... | |
 | HEII4687 | DOUBLE[6] | ... | |
 | HEII4687_BR | DOUBLE[6] | ... | |
 | OIII5007 | DOUBLE[6] | ... | |
 | OIII5007C | DOUBLE[6] | ... | |
-| CAII3934 | DOUBLE[6] | ... | |
+| CAII3934 | DOUBLE[6] | ... | For the Ca II K absorption line |
 | OII3728 | DOUBLE[6] | ... | |
 | NEV3426 | DOUBLE[6] | ... | |
 | MGII | DOUBLE[6] | ... | |
 | MGII_BR | DOUBLE[6] | ... | |
-| CIII_ALL | DOUBLE[6] | ... | |
-| CIII_BR | DOUBLE[6] | ... | |
+| CIII_ALL | DOUBLE[6] | ... | For the entire CIII] complex (CIII], SiIII], AlIII) |
+| CIII_BR | DOUBLE[6] | ... | For the broad CIII] component |
 | SIIII1892 | DOUBLE[6] | ... | |
 | ALIII1857 | DOUBLE[6] | ... | |
 | NIII1750 | DOUBLE[6] | ... | |
 | CIV | DOUBLE[6] | ... | |
 | HEII1640 | DOUBLE[6] | ... | |
 | HEII1640_BR | DOUBLE[6] | ... | |
-| SIIV_OIV | DOUBLE[6] | ... | |
+| SIIV_OIV | DOUBLE[6] | ... | For the 1400Å complex|
 | OI1304 | DOUBLE[6] | ... | |
 | LYA | DOUBLE[6] | ... | |
 | NV1240 | DOUBLE[6] | ... | |
