@@ -148,91 +148,93 @@ Main properties of SDSS DR16 quasars.
 Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algorithms/qso_catalog/).
 | Column | Description |
 | --- | --- | 
-| NHI_DLA | |
-| CONF_DLA | |
-| BAL_PROB | |
-| BI_CIV | |
-| ERR_BI_CIV | |
-| AI_CIV | |
-| ERR_AI_CIV | |
-| BI_SIIV | |
-| ERR_BI_SIIV | |
-| AI_SIIV | |
-| ERR_AI_SIIV | |
-| NSPEC_SDSS | |
-| NSPEC_BOSS | |
-| NSPEC | |
-| PSFFLUX_IVAR | |
-| PSFMAG | |
-| PSFMAGERR | |
-| EXTINCTION | |
-| M_I | |
-| SN_MEDIAN_ALL | |
-| GALEX_MATCHED | |
-| FUV | |
-| FUV_IVAR | |
-| NUV | |
-| NUV_IVAR | |
-| UKIDSS_MATCHED | |
-| YFLUX | |
-| YFLUX_ERR | |
-| JFLUX | |
-| JFLUX_ERR | |
-| HFLUX | |
-| HFLUX_ERR | |
-| KFLUX | |
-| KFLUX_ERR | |
-| W1_FLUX | |
-| W1_FLUX_IVAR | |
-| W1_MAG | |
-| W1_MAG_ERR | |
-| W1_CHI2 | |
-| W1_FLUX_SNR | |
-| W1_SRC_FRAC | |
-| W1_EXT_FLUX | |
-| W1_EXT_FRAC | |
-| W1_NPIX | |
-| W2_FLUX | |
-| W2_FLUX_IVAR | |
-| W2_MAG | |
-| W2_MAG_ERR | |
-| W2_CHI2 | |
-| W2_FLUX_SNR | |
-| W2_SRC_FRAC | |
-| W2_EXT_FLUX | |
-| W2_EXT_FRAC | |
-| W2_NPIX | |
-| FIRST_MATCHED | |
-| FIRST_FLUX | |
-| FIRST_SNR | |
-| SDSS2FIRST_SEP | |
-| JMAG | |
-| JMAG_ERR | |
-| JSNR | |
-| JRDFLAG | |
-| HMAG | |
-| HMAG_ERR | |
-| HSNR | |
-| HRDFLAG | |
-| KMAG | |
-| KMAG_ERR | |
-| KSNR | |
-| KRDFLAG | |
-| SDSS2MASS_SEP | |
-| 2RXS_ID | |
-| 2RXS_RA | |
-| 2RXS_DEC | |
-| 2RXS_SRC_FLUX | |
-| 2RXS_SRC_FLUX_ERR | |
-| SDSS2ROSAT_SEP | |
-| XMM_SRC_ID | |
-| XMM_RA | |
-| XMM_DEC | |
-| XMM_SOFT_FLUX | |
-| XMM_SOFT_FLUX_ERR | |
-| XMM_HARD_FLUX | |
-| XMM_HARD_FLUX_ERR | |
-| XMM_TOTAL_FLUX | |
-| XMM_TOTAL_FLUX_ERR | |
-| XMM_TOTAL_LUM | |
-| SDSS2XMM_SEP | |
+| `Z_DLA` | Absorber redshift |
+| `NHI_DLA` | Absorber column density |
+| `CONF_DLA` | Confidence rating for DLA absorbers |
+| `BAL_PROB` | probability an object is a BAL quasar. |
+| `BI_CIV` | BALnicity index (BI) for CIV |
+| `ERR_BI_CIV` | BI uncertainty for CIV |
+| `AI_CIV` | Absorption index for CIV|
+| `ERR_AI_CIV` | AI uncertainty for CIV |
+| `BI_SIIV` | ... |
+| `ERR_BI_SIIV` | ... |
+| `AI_SIIV` | ... |
+| `ERR_AI_SIIV` | ... |
+| `NSPEC_SDSS` | Number of additional spectra for an object from SDSS-I/II  |
+| `NSPEC_BOSS` | Number of additional spectra for an object from BOSS/eBOSS|
+| `NSPEC` | Total number of additional spectroscopic observations for an object |
+| `PSFFLUX` | PSF flux for each of the five SDSS bands: u, g, r, i, and z |
+| `PSFFLUX_IVAR` | Inverse variance for PSFFLUX |
+| `PSFMAG` | Inverse hyperbolic sine AB magnitudes for each of the five SDSS bands: u, g, r, i, and z |
+| `PSFMAGERR` | Inverse variance for PSFMAG |
+| `EXTINCTION` | The Galactic extinction values from Schlafly & Finkbeiner (2011a) for the five SDSS bands |
+| `M_I` | Absolute i -band magnitude corrected for extinction |
+| `SN_MEDIAN_ALL` | Median S/N for all good pixels in the five SDSS bands|
+| `GALEX_MATCHED` | Matching flag for objects in the forced-photometry SDSS-DR8/GALEX catalog|
+| `FUV` | GALEX FUV flux |
+| `FUV_IVAR` | Inerse variance for FUV |
+| `NUV` | GALEX NUV flux | 
+| `NUV_IVAR` | Inerse variance for NUV |
+| `UKIDSS_MATCHED` | |
+| `YFLUX` | |
+| `YFLUX_ERR` | |
+| `JFLUX` | |
+| `JFLUX_ERR` | |
+| `HFLUX` | |
+| `HFLUX_ERR` | |
+| `KFLUX` | |
+| `KFLUX_ERR` | |
+| `W1_FLUX` | |
+| `W1_FLUX_IVAR` | |
+| `W1_MAG` | |
+| `W1_MAG_ERR` | |
+| `W1_CHI2` | |
+| `W1_FLUX_SNR` | |
+| `W1_SRC_FRAC` | |
+| `W1_EXT_FLUX` | |
+| `W1_EXT_FRAC` | |
+| `W1_NPIX` | |
+| `W2_FLUX` | |
+| `W2_FLUX_IVAR` | |
+| `W2_MAG` | |
+| `W2_MAG_ERR` | |
+| `W2_CHI2` | |
+| `W2_FLUX_SNR` | |
+| `W2_SRC_FRAC` | |
+| `W2_EXT_FLUX` | |
+| `W2_EXT_FRAC` | |
+| `W2_NPIX` | |
+| `FIRST_MATCHED` | |
+| `FIRST_FLUX` | |
+| `FIRST_SNR` | |
+| `SDSS2FIRST_SEP` | |
+| `JMAG` | |
+| `JMAG_ERR` | |
+| `JSNR` | |
+| `JRDFLAG` | |
+| `HMAG` | |
+| `HMAG_ERR` | |
+| `HSNR` | |
+| `HRDFLAG` | |
+| `KMAG` | |
+| `KMAG_ERR` | |
+| `KSNR` | |
+| `KRDFLAG` | |
+| `SDSS2MASS_SEP` | |
+| `2RXS_ID` | |
+| `2RXS_RA` | |
+| `2RXS_DEC` | |
+| `2RXS_SRC_FLUX` | |
+| `2RXS_SRC_FLUX_ERR` | |
+| `SDSS2ROSAT_SEP` | |
+| `XMM_SRC_ID` | |
+| `XMM_RA` | |
+| `XMM_DEC` | |
+| `XMM_SOFT_FLUX` | The X-ray flux for the full energy range (0.2–2.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `XMM_SOFT_FLUX_ERR` | The X-ray flux error for the full energy range (0.2–2.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `XMM_HARD_FLUX` |  The X-ray flux for the full energy range (2.0–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `XMM_HARD_FLUX_ERR` | The X-ray flux error for the full energy range (2.0–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$|
+| `XMM_TOTAL_FLUX` | The total X-ray flux for the full energy range (0.2–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `XMM_TOTAL_FLUX_ERR` | The total X-ray flux error for the full energy range (0.2–12.0 keV) in $\rm erg\,s^{-1}\,cm^{-2}$ |
+| `XMM_TOTAL_LUM` | Total X-ray luminosity for the full energy range (0.2–12.0 keV) in $\rm erg\,s^{-1}$|
+| `SDSS2XMM_SEP` | Matching separation in arcsec between SDSS and XMM-Newton objects |
