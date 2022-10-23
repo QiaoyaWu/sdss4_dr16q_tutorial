@@ -22,129 +22,129 @@ Files:
 - `op`: folder to keep QA plot
 
 ## Catalog format description
-# First extension
+### First extension
 Main properties of SDSS DR16 quasars.
-| Column | Format | Unit | Description |
-| ---- | --- | --- | ------ |
-| SDSS_NAME | STRING |  | SDSS DR16 designation (J2000) |
-| PLATE | LONG64| | Spectroscopic plate number |
-| MJD | LONG64 | | Spectroscopic MJD |
-| FIBERID | LONG64 | | Spectroscopic fiber number |
-| RA | DOUBLE | degree | Right ascension (J2000) |
-| DEC | DOUBLE | degree | Declination (J2000) |
-| OBJID | STRING | | PLATE-MJD-FIBERID: PyQSOFit output name |
-| IF_BOSS_SDSS | STRING | | Source of the input spectrum: BOSS or SDSS |
-| Z_DR16Q | DOUBLE | | Best redshift provided by DR16Q |
-| SOURCE_Z_DR16Q | DOUBLE | | Source for DR16Q redshift from Lyke et al. (2020) |
-| Z_FIT | DOUBLE | | Input redshift for QSOFit; can differ from Z DR16Q |
-| Z_SYS | DOUBLE | | Systemic redshift |
-| Z_SYS_ERR | DOUBLE | | Uncertainties of systemic redshift |
-| EBV | DOUBLE | | Milky Way extinction E(B − V) from Schlegel et al. (1998) and scaled to match the results in Schlafly & Finkbeiner (2011) |
-| SN_MEDIAN_ALL | DOUBLE | | Median S/N per pixel of the raw spectrum |
-| CONTI_FIT | DOUBLE[5] | | Best-fit parameters for the continuum model (PL+poly) |
-| CONTI_FIT_ERR | DOUBLE[5] | | Uncertainties in the best-fit continuum parameters |
-| CONTI_STAT | DOUBLE[2] | | Continuum fitting pixel number, reduced $\chi^2$ |
-| FEII_UV | DOUBLE[3]| | Best-fit parameters for the UV FeII model |
-| FEII_UV_ERR | DOUBLE[3] | | Uncertainties in the best-fit UV FeII model |
-| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within 2250-2650 Å |
-| FEII_UV_EW_ERR | DOUBLE | | Uncertainties in REW_FE_2250_2650 |
-| FEII_OPT | DOUBLE[3] | | Best-fit parameters for the optical FeII model |
-| FEII_OPT_ERR | DOUBLE[3] | | Uncertainties in the best-fit optical FeII model |
-| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical FeII within 4434-4680Å|
-| FEII_OPT_EW_ERR | DOUBLE | | Uncertainties in REW_FE_4434_4684 |
-| LOGL1350 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 1350Å |
-| LOGL1350_ERR | DOUBLE |$\rm [erg\,s^{-1}]$ | Uncertainty in LOGL1350 |
-| LOGL1700 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 1700Å |
-| LOGL1700_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL1700 |
-| LOGL2500 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 2500Å |
-| LOGL2500_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL2500|
-| LOGL3000 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 3000Å |
-| LOGL3000_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL3000 |
-| LOGL5100 | DOUBLE | $\rm [erg\,s^{-1}]$ | Continuum luminosity at rest-frame 5100Å |
-| LOGL5100_ERR | DOUBLE | $\rm [erg\,s^{-1}]$ | Uncertainty in LOGL5100 |
-| | | Å,Å,$\rm 10^{-17}erg\,s^{-1}cm^{-2}$,$\rm [erg\,s^{-1}]$,$km\,s^{-1}$,Å | peak wavelength, 50% flux centoid wavelength, flux,$\log L_{\rm line}$, FWHM, rest-frame equivalent width |
-| HALPHA | DOUBLE[6] | ... | For the entire H $\alpha$ profile (narrow and broad lines combined) |
-| HALPHA_BR | DOUBLE[6] | ... | For the broad H $\alpha$ profile |
-| NII6585 | DOUBLE[6] | ... | For the narrow [NII] $\lambda$ 6584 component|
-| SII6718 | DOUBLE[6] | ... | For the entire H $\beta$ profile (narrow and broad lines combined) |
-| HBETA | DOUBLE[6] | ... | For the broad H $\beta$ component |
-| HBETA_BR | DOUBLE[6] | ... | |
-| HEII4687 | DOUBLE[6] | ... | |
-| HEII4687_BR | DOUBLE[6] | ... | |
-| OIII5007 | DOUBLE[6] | ... | |
-| OIII5007C | DOUBLE[6] | ... | |
-| CAII3934 | DOUBLE[6] | ... | For the Ca II K absorption line |
-| OII3728 | DOUBLE[6] | ... | |
-| NEV3426 | DOUBLE[6] | ... | |
-| MGII | DOUBLE[6] | ... | |
-| MGII_BR | DOUBLE[6] | ... | |
-| CIII_ALL | DOUBLE[6] | ... | For the entire CIII] complex (CIII], SiIII], AlIII) |
-| CIII_BR | DOUBLE[6] | ... | For the broad CIII] component |
-| SIIII1892 | DOUBLE[6] | ... | |
-| ALIII1857 | DOUBLE[6] | ... | |
-| NIII1750 | DOUBLE[6] | ... | |
-| CIV | DOUBLE[6] | ... | |
-| HEII1640 | DOUBLE[6] | ... | |
-| HEII1640_BR | DOUBLE[6] | ... | |
-| SIIV_OIV | DOUBLE[6] | ... | For the 1400Å complex|
-| OI1304 | DOUBLE[6] | ... | |
-| LYA | DOUBLE[6] | ... | |
-| NV1240 | DOUBLE[6] | ... | |
-| | | Å,Å,$\rm 10^{-17}erg\,s^{-1}cm^{-2}$,$\rm [erg\,s^{-1}]$,$km\,s^{-1}$,Å | Uncertainties in peak wavelength, 50% flux centoid wavelength, flux,$\log L_{\rm line}$, FWHM, rest-frame equivalent width |
-| HALPHA_ERR | DOUBLE[6] | ... | |
-| HALPHA_BR_ERR | DOUBLE[6] | ... | |
-| NII6585_ERR | DOUBLE[6] | ... | |
-| SII6718_ERR | DOUBLE[6] | ... | |
-| HBETA_ERR | DOUBLE[6] | ... | |
-| HBETA_BR_ERR | DOUBLE[6] | ... | |
-| HEII4687_ERR | DOUBLE[6] | ... | |
-| HEII4687_BR_ERR | DOUBLE[6] | ... | |
-| OIII5007_ERR | DOUBLE[6] | ... | |
-| OIII5007C_ERR | DOUBLE[6] | ... | |
-| CAII3934_ERR | DOUBLE[6] | ... | |
-| OII3728_ERR | DOUBLE[6] | ... | |
-| NEV3426_ERR | DOUBLE[6] | ... | |
-| MGII_ERR | DOUBLE[6] | ... | |
-| MGII_BR_ERR | DOUBLE[6] | ... | |
-| CIII_ALL_ERR | DOUBLE[6] | ... | |
-| CIII_BR_ERR | DOUBLE[6] | ... | |
-| SIIII1892_ERR | DOUBLE[6] | ... | |
-| ALIII1857_ERR | DOUBLE[6] | ... | |
-| NIII1750_ERR | DOUBLE[6] | ... | |
-| CIV_ERR | DOUBLE[6] | ... | |
-| HEII1640_ERR | DOUBLE[6] | ... | |
-| HEII1640_BR_ERR | DOUBLE[6] | ... | |
-| SIIV_OIV_ERR | DOUBLE[6] | ... | |
-| OI1304_ERR | DOUBLE[6] | ... | |
-| LYA_ERR | DOUBLE[6] | ... | |
-| NV1240_ERR | DOUBLE[6] | ... | |
-| HA_COMP_STAT | DOUBLE[2] |  | |
-| HB_COMP_STAT | DOUBLE[2] |  | |
-| MGII_COMP_STAT | DOUBLE[2] |  | |
-| CIII_COMP_STAT | DOUBLE[2] |  | |
-| CIV_COMP_STAT | DOUBLE[2] | | |
-| SIIV_COMP_STAT | DOUBLE[2] | | |
-| LYA_COMP_STAT | DOUBLE[2] | | |
-| CAII_LOC_STAT | DOUBLE[2] | | |
-| OII_LOC_STAT | DOUBLE[2] | | |
-| NEV_LOC_STAT | DOUBLE[2] | | |
-| LOGLBOL | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGLBOL_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
-| LOGMBH_HB | DOUBLE | | |
-| LOGMBH_HB_ERR | DOUBLE | | |
-| LOGMBH_MGII | DOUBLE | | |
-| LOGMBH_MGII_ERR | DOUBLE | | |
-| LOGMBH_CIV | DOUBLE | | |
-| LOGMBH_CIV_ERR | DOUBLE | | |
-| LOGMBH | DOUBLE | | |
-| LOGMBH_ERR | DOUBLE | | |
-| LOGLEDD_RATIO | DOUBLE | | |
-| LOGLEDD_RATIO_ERR | DOUBLE | | |
-| ZSYS_LINES | DOUBLE | | |
-| ZSYS_LINES_ERR | DOUBLE | | |
+| Column | Description |
+| ---- | ------ |
+| SDSS_NAME | SDSS DR16 designation (J2000) |
+| PLATE | Spectroscopic plate number |
+| MJD | Spectroscopic MJD |
+| FIBERID | Spectroscopic fiber number |
+| RA | Right ascension (J2000) |
+| DEC | Declination (J2000) |
+| OBJID | PLATE-MJD-FIBERID: PyQSOFit output name |
+| IF_BOSS_SDSS | Source of the input spectrum: BOSS or SDSS |
+| Z_DR16Q | Best redshift provided by DR16Q |
+| SOURCE_Z_DR16Q | Source for DR16Q redshift from Lyke et al. (2020) |
+| Z_FIT | Input redshift for QSOFit; can differ from Z DR16Q |
+| Z_SYS | Systemic redshift |
+| Z_SYS_ERR | Uncertainties of systemic redshift |
+| EBV | Milky Way extinction E(B − V) from Schlegel et al. (1998) and scaled to match the results in Schlafly & Finkbeiner (2011) |
+| SN_MEDIAN_ALL | Median S/N per pixel of the raw spectrum |
+| CONTI_FIT | Best-fit parameters for the continuum model (PL+poly) |
+| CONTI_FIT_ERR | Uncertainties in the best-fit continuum parameters |
+| CONTI_STAT | Continuum fitting pixel number, reduced $\chi^2$ |
+| FEII_UV | Best-fit parameters for the UV FeII model |
+| FEII_UV_ERR | Uncertainties in the best-fit UV FeII model |
+| FEII_UV_EW | Rest-frame equivalent width of UV FeII within 2250-2650 Å |
+| FEII_UV_EW_ERR | Uncertainties in REW_FE_2250_2650 |
+| FEII_OPT | Best-fit parameters for the optical FeII model |
+| FEII_OPT_ERR | Uncertainties in the best-fit optical FeII model |
+| FEII_OPT_EW | Rest-frame equivalent width of optical FeII within 4434-4680Å|
+| FEII_OPT_EW_ERR | Uncertainties in REW_FE_4434_4684 |
+| LOGL1350 | Continuum luminosity at rest-frame 1350Å |
+| LOGL1350_ERR |$\rm [erg\,s^{-1}]$ | Uncertainty in LOGL1350 |
+| LOGL1700 | Continuum luminosity at rest-frame 1700Å |
+| LOGL1700_ERR | Uncertainty in LOGL1700 |
+| LOGL2500 | Continuum luminosity at rest-frame 2500Å |
+| LOGL2500_ERR | Uncertainty in LOGL2500|
+| LOGL3000 | Continuum luminosity at rest-frame 3000Å |
+| LOGL3000_ERR | Uncertainty in LOGL3000 |
+| LOGL5100 | Continuum luminosity at rest-frame 5100Å |
+| LOGL5100_ERR | Uncertainty in LOGL5100 |
+|  | peak wavelength, 50% flux centoid wavelength, flux, logL of lines, FWHM, rest-frame equivalent width |
+| HALPHA | For the entire Hα profile (narrow and broad lines combined) |
+| HALPHA_BR | For the broad Hα profile |
+| NII6585 | For the narrow [NII] λ6584 component|
+| SII6718 | ... |
+| HBETA | For the entire Hβ profile (narrow and broad lines combined) |
+| HBETA_BR | For the broad Hβ component |
+| HEII4687 | For the entire HeII λ4687 profile (narrow and broad lines combined) |
+| HEII4687_BR | For the broad HeII λ4687 component | 
+| OIII5007 | For the entire [OIII] λ5007 profile | 
+| OIII5007C | For the core [OIII] λ5007 profile | 
+| CAII3934 | For the Ca II K absorption line |
+| OII3728 | ... |
+| NEV3426 | For the entire NeV λ3426 profile (narrow and broad lines combined) |
+| MGII | For the entire MgII profile (narrow and broad lines combined) |
+| MGII_BR | For the broad MgII component | 
+| CIII_ALL | For the entire CIII] complex (CIII], SiIII], AlIII) |
+| CIII_BR | For the broad CIII] component |
+| SIIII1892 | ... |
+| ALIII1857 | ... |
+| NIII1750 | ... |
+| CIV | ... |
+| HEII1640 | For the entire HeII λ1640 profile (narrow and broad lines combined) |
+| HEII1640_BR | For the broad HeII λ1640 component | 
+| SIIV_OIV | For the 1400Å complex|
+| OI1304 | ... |
+| LYA | ... |
+| NV1240 | ... |
+| | Uncertainties in peak wavelength, 50% flux centoid wavelength, flux, logL of lines, FWHM, rest-frame equivalent width |
+| HALPHA_ERR | ... |
+| HALPHA_BR_ERR | ... |
+| NII6585_ERR | ... |
+| SII6718_ERR | ... |
+| HBETA_ERR | ... |
+| HBETA_BR_ERR | ... |
+| HEII4687_ERR | ... |
+| HEII4687_BR_ERR | ... |
+| OIII5007_ERR | ... |
+| OIII5007C_ERR | ... |
+| CAII3934_ERR | ... |
+| OII3728_ERR | ... |
+| NEV3426_ERR | ... |
+| MGII_ERR | ... |
+| MGII_BR_ERR | ... |
+| CIII_ALL_ERR | ... |
+| CIII_BR_ERR | ... |
+| SIIII1892_ERR | ... |
+| ALIII1857_ERR | ... |
+| NIII1750_ERR | ... |
+| CIV_ERR | ... |
+| HEII1640_ERR | ... |
+| HEII1640_BR_ERR | ... |
+| SIIV_OIV_ERR | ... |
+| OI1304_ERR | ... |
+| LYA_ERR | ... |
+| NV1240_ERR | ... |
+| HA_COMP_STAT | Complex line pixel number, reduced $\chi^2$|
+| HB_COMP_STAT | ... |
+| MGII_COMP_STAT | ... |
+| CIII_COMP_STAT | ... |
+| CIV_COMP_STAT | ... |
+| SIIV_COMP_STAT | ... |
+| LYA_COMP_STAT | ... |
+| CAII_LOC_STAT | Local line pixel number, reduced $\chi^2$ |
+| OII_LOC_STAT | ... |
+| NEV_LOC_STAT | ... |
+| LOGLBOL | Bolometric luminosity |
+| LOGLBOL_ERR | Uncertainties in bolometric luminosity |
+| LOGMBH_HB | Single-epoch BH mass based on Hβ |
+| LOGMBH_HB_ERR | Uncertainties in LOGMBH_HB |
+| LOGMBH_MGII | Single-epoch BH mass based on MgII |
+| LOGMBH_MGII_ERR | ... |
+| LOGMBH_CIV | Single-epoch BH mass based on CIV |
+| LOGMBH_CIV_ERR | ... |
+| LOGMBH | Fiducial single-epoch BH mass |
+| LOGMBH_ERR | ... |
+| LOGLEDD_RATIO | Eddington ratio based on fiducial single-epoch BH mass |
+| LOGLEDD_RATIO_ERR | Uncertainties in LOGLEDD_RATIO |
+| ZSYS_LINES | Systematic redshift from individual lines in the order of Hβ_BR, [OIII]5007, CaII3934, [OII]3728, MgII, CIII], CIV, SiIV |
+| ZSYS_LINES_ERR | Uncertainties in systematic redshift from individual lines |
 
 
-# Second extension
+### Second extension
 Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algorithms/qso_catalog/).
 | Column | Description |
 | --- | --- | 
