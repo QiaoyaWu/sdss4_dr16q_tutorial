@@ -46,22 +46,22 @@ Main properties of SDSS DR16 quasars.
 | CONTI_STAT | DOUBLE[2] | | Continuum fitting pixel number, reduced $\chi^2$ |
 | FEII_UV | DOUBLE[3]| | Best-fit parameters for the UV FeII model |
 | FEII_UV_ERR | DOUBLE[3] | | Uncertainties in the best-fit UV FeII model |
-| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within 2250-2650$\angstrom$ |
-| FEII_UV_EW_ERR | DOUBLE | | Uncertainties in REW FE 2250 2650 |
-| FEII_OPT | DOUBLE[3] | | Best-fit parameters for the optical Fe ii model |
-| FEII_OPT_ERR | DOUBLE[3] | | Uncertainties in the best-fit optical Fe ii model |
-| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical Fe ii within 4434-4680$\AA$|
-| FEII_OPT_EW_ERR | DOUBLE | | Uncertainties in REW FE 4434-4684 |
-| LOGL1350 | DOUBLE | $[erg s^{-1}]$ | Continuum luminosity at rest-frame 1350$\AA$ |
-| LOGL1350_ERR | DOUBLE | [erg s$^{-1}$] | Uncertainty in LOGL1350 |
-| LOGL1700 | DOUBLE | [erg s$^{-1}$] | |
-| LOGL1700_ERR | DOUBLE | [erg s$^{-1}$] | |
-| LOGL2500 | DOUBLE | [erg s$^{-1}$] | |
-| LOGL2500_ERR | DOUBLE | [erg s$^{-1}$] | |
-| LOGL3000 | DOUBLE | [erg s$^{-1}$] | |
-| LOGL3000_ERR | DOUBLE | [erg s$^{-1}$] | |
-| LOGL5100 | DOUBLE | [erg s$^{-1}$] | |
-| LOGL5100_ERR | DOUBLE | [erg s$^{-1}$] | |
+| FEII_UV_EW | DOUBLE | | Rest-frame equivalent width of UV FeII within $2250-2650\angstrom$ |
+| FEII_UV_EW_ERR | DOUBLE | | Uncertainties in REW_FE_2250_2650 |
+| FEII_OPT | DOUBLE[3] | | Best-fit parameters for the optical FeII model |
+| FEII_OPT_ERR | DOUBLE[3] | | Uncertainties in the best-fit optical FeII model |
+| FEII_OPT_EW | DOUBLE | | Rest-frame equivalent width of optical FeII within $4434-4680\AA$|
+| FEII_OPT_EW_ERR | DOUBLE | | Uncertainties in REW_FE_4434_4684 |
+| LOGL1350 | DOUBLE | $\rm [erg s^{-1}]$ | Continuum luminosity at rest-frame $1350\AA$ |
+| LOGL1350_ERR | DOUBLE |$\rm [erg s^{-1}]$ | Uncertainty in LOGL1350 |
+| LOGL1700 | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGL1700_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGL2500 | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGL2500_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGL3000 | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGL3000_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGL5100 | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGL5100_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
 | HALPHA | DOUBLE[5] | | |
 | HALPHA_BR | DOUBLE[5] | | |
 | NII6585 | DOUBLE[5] | | |
@@ -126,8 +126,8 @@ Main properties of SDSS DR16 quasars.
 | CAII_LOC_STAT | DOUBLE[5] | | |
 | OII_LOC_STAT | DOUBLE[5] | | |
 | NEV_LOC_STAT | DOUBLE[5] | | |
-| LOGLBOL | DOUBLE | [erg s$^{-1}$] | |
-| LOGLBOL_ERR | DOUBLE | [erg s$^{-1}$] | |
+| LOGLBOL | DOUBLE | $\rm [erg s^{-1}]$ | |
+| LOGLBOL_ERR | DOUBLE | $\rm [erg s^{-1}]$ | |
 | LOGMBH_HB | DOUBLE | | |
 | LOGMBH_HB_ERR | DOUBLE | | |
 | LOGMBH_MGII | DOUBLE | | |
