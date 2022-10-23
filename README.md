@@ -55,15 +55,15 @@ Main properties of SDSS DR16 quasars.
 | `FEII_OPT_EW` | Rest-frame equivalent width of optical FeII within 4434-4680Å|
 | `FEII_OPT_EW_ERR` | Uncertainties in REW_FE_4434_4684 |
 | `LOGL1350` | Continuum luminosity at rest-frame 1350Å |
-| `LOGL1350_ERR` |$\rm [erg\,s^{-1}]$ | Uncertainty in LOGL1350 |
-| `LOGL1700` | Continuum luminosity at rest-frame 1700Å |
-| `LOGL1700_ERR` | Uncertainty in LOGL1700 |
-| `LOGL2500` | Continuum luminosity at rest-frame 2500Å |
-| `LOGL2500_ERR` | Uncertainty in LOGL2500|
-| `LOGL3000` | Continuum luminosity at rest-frame 3000Å |
-| `LOGL3000_ERR` | Uncertainty in LOGL3000 |
-| `LOGL5100` | Continuum luminosity at rest-frame 5100Å |
-| `LOGL5100_ERR` | Uncertainty in LOGL5100 |
+| `LOGL1350_ERR` | Uncertainty in LOGL1350 |
+| `LOGL1700` | ... |
+| `LOGL1700_ERR` | ... |
+| `LOGL2500` | ... |
+| `LOGL2500_ERR` | ... |
+| `LOGL3000` | ... |
+| `LOGL3000_ERR` | ... |
+| `LOGL5100` | ... |
+| `LOGL5100_ERR` | ... |
 |  | peak wavelength, 50% flux centoid wavelength, flux, logL of lines, FWHM, rest-frame equivalent width |
 | `HALPHA` | For the entire Hα profile (narrow and broad lines combined) |
 | `HALPHA_BR` | For the broad Hα profile |
