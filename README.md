@@ -18,6 +18,7 @@ Files:
 - `qsofunc.py`: python script to calculate the continuum model, gaussian line profile, line properties, and etc.
 - `qsopar_generate.py`: python script to generate the PyQSOFit input parameters
 - `fe_optical.txt` and `fe_uv.txt`: text files for the FeII model
+- `PyQSOFit_wqy.py`: modified version for PyQSOFit v1.1 used in this work 
 - `download`: folder to keep downloaded output fits file
 - `op`: folder to keep QA plot
 
