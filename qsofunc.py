@@ -5,7 +5,7 @@ import numpy as np
 from astropy.io import fits
 import matplotlib.pyplot as plt
 import warnings
-from astropy.modeling.blackbody import blackbody_lambda
+#from astropy.modeling.blackbody import blackbody_lambda
 from scipy import interpolate
 from scipy import integrate
 from astropy import constants as const
@@ -213,7 +213,7 @@ def get_line_prop(linename, conti_arr, qso_data, qso_data_mc):
                                ['MgII_br_1', 'MgII_br_2', 'MgII_na_1'], ['MgII_br_1', 'MgII_br_2'], ['CIII_br1_1', 'CIII_br2_1', 'SiIII1892_1', 'AlIII1857_1'], ['CIII_br1_1', 'CIII_br2_1'], \
                                ['SiIII1892_1'], ['AlIII1857_1'], ['NIII1750_1'], \
                                ['CIV_br_1', 'CIV_br_2', 'CIV_br_3'], ['HeII1640_1', 'HeII1640_br_1'], ['HeII1640_br_1'], \
-                               ['SIIV_OIV1_1', 'SIIV_OIV2_1'], ['OI1304_1'], ['Lya_br_1', 'Lya_br_2', 'Lya_br_3'], ['NV1240_1']])
+                               ['SiIV_OIV1_1', 'SiIV_OIV2_1'], ['OI1304_1'], ['Lya_br_1', 'Lya_br_2', 'Lya_br_3'], ['NV1240_1']])
     op_sublinelist_flat = np.array([op_sublinelist[i][j] for i in range(len(op_sublinelist)) for j in range(len(op_sublinelist[i]))])
     op_sublinelist_flat_order = np.array([i for i in range(len(op_sublinelist)) for j in range(len(op_sublinelist[i]))])
 
