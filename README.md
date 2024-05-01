@@ -146,7 +146,7 @@ Main properties of SDSS DR16 quasars.
 | `LOGLEDD_RATIO_ERR` | Uncertainties in LOGLEDD_RATIO |
 | `ZSYS_LINES` | Systematic redshift from individual lines in the order of Hβ_BR, [OIII]5007, CaII3934, [OII]3728, MgII, CIII], CIV, SiIV |
 | `ZSYS_LINES_ERR` | Uncertainties in systematic redshift from individual lines |
-
+| `FHOST_5100` | Flux ratio between the host galaxy and total flux at 5100 $\rm \AA$
 
 ### Second extension
 Quasar properties directly from [DR16Q catalog](https://www.sdss.org/dr16/algorithms/qso_catalog/).
