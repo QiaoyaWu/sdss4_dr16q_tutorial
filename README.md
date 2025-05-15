@@ -5,25 +5,37 @@ We present a catalog of continuum and emission line properties for 750,414 broad
 
 Arxiv: [2209.03987](https://arxiv.org/abs/2209.03987)
 
+ADS: [A Catalog of Quasar Properties from Sloan Digital Sky Survey Data Release 16](https://ui.adsabs.harvard.edu/abs/2022ApJS..263...42W/abstract)
+
+
 ## Tutorial
 
 Here we show the [example demo notebook](https://github.com/QiaoyaWu/sdss4_dr16q_tutorial/blob/main/sdss4_QSOFit_op_tutorial.ipynb) for users to read the [PyQSOFit](https://github.com/legolason/PyQSOFit) output file.
 
 The catalog, PyQSOFit output files, and supplemental materials can be downloaded at: [http://quasar.astro.illinois.edu/paper_data/DR16Q/](http://quasar.astro.illinois.edu/paper_data/DR16Q/)
 
-Due to space limit, we do not provide individual QA plots. You can genererate QA plots using the output fits file and the Jupyter notebook tutorial. If you need bulk QA plots for a specific set of DR16Q quasars, we will be happy to provide them upon requests. 
+***Important Notes:***
+- For a subset of objects, specifically those at redshifts $z < 0.7$, the LogLbol values were calculated using the 5100 Å continuum luminosity (LogL5100) instead of the 3000 Å continuum luminosity (LogL3000) even when LogL3000 was available. **Please use the provided LogLbol values for these objects with caution, as they do not follow the intended methodology. Users can recompute LogLbol using the available LogL3000 values.** (May-15-2025)
+- Added PCA host galaxy decomposition parameters (May-01-2024)
+- Updated missing data in columns SIIV_OIV and SIIV_OIV_ERR (May-16-2023)
+- Added columns LOGL2500 and LOGL2500_ERR (Oct-23-2022)
+- Catalog online (Sep-08-2022)
 
-Files:
-- `sdss4_QSOFit_op_tutorial.ipynb`: jupyter notebook for using the PyQSOFit output fits
-- `qsofunc.py`: python script to calculate the continuum model, gaussian line profile, line properties, and etc.
-- `qsopar_generate.py`: python script to generate the PyQSOFit input parameters
+
+Due to space limitations, we do not provide individual QA plots. You can generate QA plots using the output fits file and the Jupyter notebook tutorial. If you need bulk QA plots for a specific set of DR16Q quasars, we will be happy to provide them upon request. 
+
+## Files in this repo
+
+- `sdss4_QSOFit_op_tutorial.ipynb`: Jupyter notebook for using the PyQSOFit output fits
+- `qsofunc.py`: Python script to calculate the continuum model, Gaussian line profile, line properties, etc.
+- `qsopar_generate.py`: Python script to generate the PyQSOFit input parameters
 - `fe_optical.txt` and `fe_uv.txt`: text files for the FeII model
 - `PyQSOFit_wqy.py`: modified version for PyQSOFit v1.1 used in this work 
-- `download`: folder to keep downloaded output fits file
+- `download`: folder to keep the downloaded output fits file
 - `op`: folder to keep QA plot
 
 ## Catalog format description
-Here we provide a detailed description for the main catalog that has two extensions.
+Here we provide a detailed description of the main catalog that has two extensions.
 
 ### First extension
 Main properties of SDSS DR16 quasars.
